@@ -431,6 +431,7 @@ GameObject:
   - component: {fileID: 1135456157}
   - component: {fileID: 1135456159}
   - component: {fileID: 1135456158}
+  - component: {fileID: 1135456160}
   m_Layer: 5
   m_Name: StoryGUI
   m_TagString: Untagged
@@ -496,6 +497,64 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1135456156}
   m_CullTransparentMesh: 1
+--- !u!114 &1135456160
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1135456156}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ed398bd4fc580b498bedba1be50b8bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  storyText: {fileID: 0}
+--- !u!1 &1409838532
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1409838534}
+  - component: {fileID: 1409838533}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1409838533
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1409838532}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e8653687bf454e4ea804008b2d4771a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  showManager: {fileID: 1135456160}
+--- !u!4 &1409838534
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1409838532}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 531.38, y: 1045.7927, z: 5.1040735}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1937551260
 GameObject:
   m_ObjectHideFlags: 0
@@ -507,7 +566,6 @@ GameObject:
   - component: {fileID: 1937551261}
   - component: {fileID: 1937551263}
   - component: {fileID: 1937551262}
-  - component: {fileID: 1937551264}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -554,15 +612,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a odio aliquet,
-    pharetra nunc ac, consequat tortor. Aliquam porta ex ut erat fringilla consequat
-    vel nec tellus. Orci varius natoque penatibus et magnis dis parturient montes,
-    nascetur ridiculus mus. Praesent eu elementum leo. Pellentesque eu dolor ligula.
-    Donec a libero mauris. Quisque quis enim efficitur, tristique purus sit amet,
-    vestibulum nisl. Donec sit amet tortor sed velit mattis pellentesque nec cursus
-    urna. Ut molestie nisl purus, non euismod justo pharetra in. Vestibulum at metus
-    vitae dolor semper pretium eget at sem. Pellentesque et metus sed lectus efficitur
-    pharetra. Aliquam accumsan mauris arcu, eget convallis lorem fringilla ac. '
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8a89fa14b10d46a99122fd4f73fca9a2, type: 2}
   m_sharedMaterial: {fileID: 2140474, guid: 8a89fa14b10d46a99122fd4f73fca9a2, type: 2}
@@ -639,22 +689,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1937551260}
   m_CullTransparentMesh: 1
---- !u!114 &1937551264
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1937551260}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1b56a9e846277ba47a609602161ca885, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  typingSpeed: 0.03
-  buttonPrefab: {fileID: 7063677286833591886, guid: 6cbdf26a1485fc34f96caeed759c8a1c, type: 3}
-  buttonContainer: {fileID: 1135456157}
-  numberOfButtons: 3
 --- !u!1 &1987149530
 GameObject:
   m_ObjectHideFlags: 0
@@ -734,3 +768,4 @@ SceneRoots:
   - {fileID: 93146876}
   - {fileID: 718841449}
   - {fileID: 1987149533}
+  - {fileID: 1409838534}

@@ -1,0 +1,98 @@
+{
+    "chapters": 
+    [
+      {
+        "id": "chapter1",
+        "title": "Chapter 1: The Beginning",
+        "scenes": 
+        [
+          {
+            "id": "scene1",
+            "text": "It was a dark and stormy night...",
+            "choices": [
+              {
+                "text": "Open the door",
+                "nextScene": "scene2"
+              },
+              {
+                "text": "Look out the window",
+                "nextScene": "scene3"
+              }
+            ]
+          },
+          {
+            "id": "scene2",
+            "text": "You opened the door to the unknown... It's too dark to see but you are in a corridor. There's a door right next to you and there's another on your far left.",
+            "choices": [
+                {
+                    "text": "Open nearest door",
+                    "nextScene": "scene4"
+                },
+                {
+                    "text": "Open farther door",
+                    "nextScene": "scene5"
+                }
+            ]
+          },
+          {
+            "id": "scene3",
+            "text": "There's only darkness, not a single thing visible...",
+            "choices": [
+                {
+                    "text": "Open the door",
+                    "nextScene": "scene2"
+                }
+            ]
+          },
+          {
+            "id": "scene4",
+            "text": "As you approach the door, it locks down...",
+            "choices": [
+                {
+                    "text": "Open farther door",
+                    "nextScene": "scene5"
+                }
+            ]
+          },
+          {
+            "id": "scene5",
+            "text": "The door creaks open... You see a pretty doll sitting on a chair staring out the window...",
+            "choices": [
+                {
+                    "text": "Go near the doll",
+                    "nextScene": "scene7"
+                },
+                {
+                    "text": "Observe more",
+                    "nextScene": "scene6"
+                },
+                {
+                    "text": "Leave the room",
+                    "nextScene": "scene8"
+                }
+            ]
+          },
+          {
+            "id": "scene6",
+            "text": "There is a flashlight on a shelf...",
+            "choices": [
+                {
+                    "text": "Take the flashlight",
+                    "nextScene": "scene7"
+                }
+            ]
+          },
+          {
+            "id": "scene7",
+            "text": "The doll suddenly turns around and stares back at you... You hear her giggle and then she vanishes out of thin air...",
+            "choices": [
+                {
+                    "text": "Leave the room",
+                    "nextScene": "scene8"
+                }
+            ]
+          }
+        ]
+      }
+    ]
+  }
